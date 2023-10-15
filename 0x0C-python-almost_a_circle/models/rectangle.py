@@ -116,3 +116,22 @@ class Rectangle(Base):
         str_rep = "[Rectangle] ({}) {}/{} - {}/{}"\
                 .format(self.id, self.x, self.y, self.__width, self.__height)
         return str_rep
+
+    def update(self, *args):
+        """Updates rectangle class and
+        assigns an argument to each attribute
+ 
+        Args:
+            *args: Variable number of positional arguments
+        """
+        if not args and not kwargs:
+            return
+        if args is not None:
+            attributes = ["id", "width", "height", "x", "y"]
+            for i, j in enumerate(args):
+                if i < len(attributes):
+                    setattr(self, attributes[i], j)
+        else:
+            for k, v in kwargs.items():
+                if hasattr(self, k):
+                    setattr(self, k, v)
