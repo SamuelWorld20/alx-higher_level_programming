@@ -117,7 +117,7 @@ class Rectangle(Base):
                 .format(self.id, self.x, self.y, self.__width, self.__height)
         return str_rep
 
-    def update(self, *args):
+    def update(self, *args, **kwargs):
         """Updates rectangle class and
         assigns an argument to each attribute
  
@@ -135,3 +135,16 @@ class Rectangle(Base):
             for k, v in kwargs.items():
                 if hasattr(self, k):
                     setattr(self, k, v)
+
+        def to_dictionary(self):
+            """
+            Returns the dictionary representation of a
+            rectangle
+            """
+            _map = {}
+            for key, value in self.__dict__.items():
+                if key.startswith("_"):
+                    _map[key.split("__")[-1]] = value
+                else:
+                     _map[key] = value
+            return _map
