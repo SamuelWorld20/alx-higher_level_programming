@@ -123,6 +123,8 @@ class Rectangle(Base):
  
         Args:
             *args: Variable number of positional arguments
+            **kwargs(kwargs):5-main.py
+
         """
         if not args and not kwargs:
             return
