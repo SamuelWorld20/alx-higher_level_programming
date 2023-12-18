@@ -22,6 +22,7 @@ The ALX Higher-Level Programming repository covers a wide range of topics and pr
 This repository covers various high-level programming languages, including but not limited to:
 
 - **Python**: A versatile and widely-used language known for its simplicity and readability.
+- **JavaScript**: A powerful language commonly used for web development, known for its versatility and ability to create interactive web pages.
 
 N.B: This is not up to date now as I'll be updating it as I progress in the program
 
@@ -32,6 +33,7 @@ You can explore projects and resources for each of these languages in this repos
 Here are some of the projects and topics covered in this repository:
 
 - **Python Basics**: Introduction to Python syntax, data types, and control structures.
+- **JavaScript Fundamentals**: Basics of JavaScript, including variables, functions, and control flow.
 
 N.B: This is not up to date now as I'll be updating it as I progress in the program
 
